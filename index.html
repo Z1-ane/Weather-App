@@ -5,8 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
   <body>
+    <header>
+      <h1>My Weather App</h1>
+      <p>Your go to weather app</p>
+    </header>
+    <form action="">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input
+        type="text"
+        name="searchbar"
+        id="search"
+        placeholder="Enter the city:"
+      />
+    </form>
+    <main>
+      <div class="temp-condition">
+        <p class="cityName">SanFransisco</p>
+        <p class="temp">
+          <span class="icon"
+            ><i class="fa-solid fa-sun" style="color: #ffd43b"></i></span
+          ><span class="temp_in_C">60°C</span>
+        </p>
+        <p class="condition">Sunny</p>
+        <p class="minor-condition">
+          <span class="humidity"
+            ><i class="fa-solid fa-droplet" style="color: #74c0fc"></i>60%</span
+          ><span class="wind"
+            ><i class="fa-solid fa-wind" style="color: #74c0fc"></i>8mph</span
+          >
+        </p>
+      </div>
+    </main>
+    <section>
+      <div class="five-day">
+        <h1>Five Day Forecast</h1>
+        <div class="forecast-card">
+          <p class="day">Monday</p>
+          <p class="icon">☀️</p>
+          <p class="temp">72°F</p>
+          <p class="condition">Sunny</p>
+        </div>
+        <div class="forecast-card">
+          <p class="day">Monday</p>
+          <p class="icon">☀️</p>
+          <p class="temp">72°F</p>
+          <p class="condition">Sunny</p>
+        </div>
+        <div class="forecast-card">
+          <p class="day">Monday</p>
+          <p class="icon">☀️</p>
+          <p class="temp">72°F</p>
+          <p class="condition">Sunny</p>
+        </div>
+        <div class="forecast-card">
+          <p class="day">Monday</p>
+          <p class="icon">☀️</p>
+          <p class="temp">72°F</p>
+          <p class="condition">Sunny</p>
+        </div>
+        <div class="forecast-card">
+          <p class="day">Monday</p>
+          <p class="icon">☀️</p>
+          <p class="temp">72°F</p>
+          <p class="condition">Sunny</p>
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
