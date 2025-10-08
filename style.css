@@ -1,5 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  background-color: #f1faee;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 0.75rem;
+  max-width: 960px;
+}
+header {
+  text-align: center;
+  padding: 0.75rem;
+}
+header p {
+  color: #14213d;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* phase3: search form:*/
+form {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  gap: 1rem;
+  width: 90%;
+}
+form i {
+  font-size: 1.65rem;
+  cursor: pointer;
+  color: #ff4561;
+}
+form input {
+  height: 1.55rem;
+  padding: 1.15rem;
+  font-size: 1.15rem;
+  border: 3px solid #4a5759;
+  outline: none;
+  border-radius: 0.75rem;
+}
+.current-temp {
+  text-align: center;
+  background-color: hwb(105 93% 2%);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  margin: 1rem auto;
+  box-shadow: inset 0 2px 6px rgba(136, 61, 61, 0.3);
+  font-size: 1.35rem;
+}
+.current-temp .cityName {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  color: #182d33;
+}
+.minor-condition {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.five-day {
+  text-align: center;
+  padding: 1.25rem;
+  margin-top: 2rem;
+  gap: 1rem;
+  box-shadow: inset 0 2px 6px rgba(136, 61, 61, 0.3);
+  background-color: hwb(105 93% 2%);
+}
+.five-day h1 {
+  color: #0d1b2a;
+  margin: 0.65rem;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  overflow-x: auto;
+}
+.forecast-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  background-color: #ffcad471;
+  font-size: 1.25rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
 }
