@@ -6,6 +6,7 @@
 }
 body {
   background-color: #f1faee;
+  margin: 0 auto;
   font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -22,7 +23,6 @@ header p {
   text-transform: uppercase;
   font-weight: 700;
 }
-/* phase3: search form:*/
 form {
   display: flex;
   margin: 0 auto;
@@ -91,4 +91,55 @@ form input {
   font-size: 1.25rem;
   padding: 0.75rem;
   border-radius: 0.5rem;
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+/* For tablet design*/
+
+@media (min-width: 768px) {
+  body {
+    padding: 2rem;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  .form {
+    width: 70%;
+  }
+  .current-temp {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+  .five-day {
+    padding: 2rem;
+  }
+  .cards {
+    justify-content: space-around;
+    overflow: visible;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    max-width: 1200px;
+    padding: 2rem;
+  }
+
+  form {
+    width: 50%;
+  }
+
+  .five-day {
+    margin-top: 3rem;
+    gap: 2rem;
+  }
+
+  .cards {
+    gap: 2rem;
+  }
+
+  .forecast-card {
+    font-size: 1.5rem;
+    padding: 1.25rem;
+  }
 }
