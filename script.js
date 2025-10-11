@@ -25,7 +25,12 @@ async function searchWeather() {
 }
 function updateUI(weatherInfo) {
   if (!weatherInfo) {
-    document.querySelector(".current-temp").textContent = "City not found!";
+    cityName.textContent = "City not found!";
+    temp.textContent = "";
+    icon.innerHTML = "";
+    condition.textContent = "Please try again";
+    humidity.textContent = "";
+    windSpeed.textContent = "";
     return;
   }
 
