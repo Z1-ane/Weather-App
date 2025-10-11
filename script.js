@@ -24,16 +24,6 @@ async function searchWeather() {
   updateUI(weatherInfo);
 }
 function updateUI(weatherInfo) {
-  if (!weatherInfo) {
-    cityName.textContent = "City not found!";
-    temp.textContent = "";
-    icon.innerHTML = "";
-    condition.textContent = "Please try again";
-    humidity.textContent = "";
-    windSpeed.textContent = "";
-    return;
-  }
-
   let cityName = document.querySelector(".cityName");
   let temp = document.querySelector(".temp_in_C");
   let icon = document.querySelector(".current-icon");
@@ -44,7 +34,15 @@ function updateUI(weatherInfo) {
   const iconCode = weatherInfo.weather[0].icon;
   const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
   icon.innerHTML = `<img src="${iconUrl}" alt="weather icon">`;
-
+  if (!weatherInfo) {
+    cityName.textContent = "City not found!";
+    temp.textContent = "";
+    icon.innerHTML = "";
+    condition.textContent = "Please try again";
+    humidity.textContent = "";
+    windSpeed.textContent = "";
+    return;
+  }
   cityName.textContent = weatherInfo.name;
   temp.textContent = `${weatherInfo.main.temp}°C`;
   condition.textContent = weatherInfo.weather[0].main;
