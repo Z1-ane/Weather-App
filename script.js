@@ -31,7 +31,7 @@ function updateUI(weatherInfo) {
 
   let cityName = document.querySelector(".cityName");
   let temp = document.querySelector(".temp_in_C");
-  let icon = document.querySelector(".icon");
+  let icon = document.querySelector(".current-icon");
   let condition = document.querySelector(".condition");
   let humidity = document.querySelector(".humidity");
   let windSpeed = document.querySelector(".wind");
